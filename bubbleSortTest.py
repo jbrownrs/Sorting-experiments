@@ -17,6 +17,12 @@ class TestBubbleSort(unittest.TestCase):
         emptyList = []
         expectedList = []
         self.assertEqual(bubbleSort.bubbleSort(emptyList), expectedList)
+
+    def test_sortCharacters(self):
+        unsortedList = ['b','a','c']
+        expectedList = ['a','b','c']
+        self.assertEqual(bubbleSort.bubbleSort(unsortedList), expectedList)        
+                
         
 if __name__ == '__main__':
     unittest.main()
