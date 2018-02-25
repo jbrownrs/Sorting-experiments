@@ -22,7 +22,11 @@ class TestBubbleSort(unittest.TestCase):
         unsortedList = ['b','a','c']
         expectedList = ['a','b','c']
         self.assertEqual(bubbleSort.bubbleSort(unsortedList), expectedList)        
-                
+
+    def test_negative(self):
+        unsortedList = [-1,-2,-3]
+        expectedList = [-3,-2,-1]
+        self.assertEqual(bubbleSort.bubbleSort(unsortedList), expectedList)  
         
 if __name__ == '__main__':
     unittest.main()
