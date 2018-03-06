@@ -13,9 +13,7 @@ def bubbleSort(input):
             # swap numbers if left number is bigger
             # than right number
             if input[x] > input[x+1] :
-                temp = input[x]
-                input[x] = input[x+1]
-                input[x+1] = temp
+                input[x],input[x+1] = input[x+1],input[x]
                 sorted = False
         sortTo = sortTo - 1
     return input
